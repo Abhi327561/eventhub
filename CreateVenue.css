@@ -1,0 +1,19 @@
+.create-venue-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .create-venue-page h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  /* Add any additional styles you need for the CreateVenue page */
+  /* frontend/src/pages/CreateVenue.css */
+.create-venue-page {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
