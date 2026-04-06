@@ -25,24 +25,20 @@ function App() {
             <Navbar />
             <main className="main-content">
               <Routes>
-                {/* Public Routes */}
                 <Route index element={<Home />} />
                 <Route path="events" element={<Events />} />
                 <Route path="events/:id" element={<EventDetail />} />
                 
-                {/* Protected Routes */}
                 <Route element={<PrivateRoute />}>
                   <Route path="create-event" element={<CreateEvent />} />
                   <Route path="profile" element={<Profile />} />
                 </Route>
 
-                {/* Admin Routes */}
                 <Route element={<PrivateRoute adminOnly />}>
                   <Route path="create-venue" element={<CreateVenue />} />
                   <Route path="admin" element={<AdminDashboard />} />
                 </Route>
 
-                {/* Auth Routes */}
                 <Route path="login" element={<Login />} />
                 <Route path="register" element={<Register />} />
               </Routes>

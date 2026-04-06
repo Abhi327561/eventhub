@@ -2,7 +2,6 @@ import axios from 'axios';
 
 const API_URL = '/api/events';
 
-// Create new event
 export const createEvent = async (eventData) => {
   try {
     const token = localStorage.getItem('token');
@@ -19,7 +18,6 @@ export const createEvent = async (eventData) => {
   }
 };
 
-// Get all events
 export const getEvents = async () => {
   try {
     const response = await axios.get(API_URL);
@@ -30,7 +28,6 @@ export const getEvents = async () => {
   }
 };
 
-// Get single event
 export const getEvent = async (id) => {
   try {
     const response = await axios.get(`${API_URL}/${id}`);
@@ -41,7 +38,6 @@ export const getEvent = async (id) => {
   }
 };
 
-// Delete event
 export const deleteEvent = async (id) => {
   try {
     const token = localStorage.getItem('token');

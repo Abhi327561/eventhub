@@ -77,7 +77,7 @@ EventHub is a robust, full-stack web application designed to streamline event ma
 │   ├── src/
 │   │   ├── components/     # Reusable UI components
 │   │   ├── pages/          # Page views
-│   │   ├── services/       # API call logic
+│   │   ├── context/        # Context providers for state management
 │   │   └── App.js          # Main application component
 ├── server/                 # Express backend application
 │   ├── models/             # Mongoose schemas
